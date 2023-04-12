@@ -1,0 +1,46 @@
+﻿<Window x:Class="ItoqPraktika.User"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ItoqPraktika"
+        mc:Ignorable="d"
+        Title="User" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="195*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Content="Запчасти"  Margin="0,0,0,1" Click="Button_Click" />
+        <Button Grid.Row="0" Grid.Column="1" Content="Модель" Margin="0,0,0,1" Click="Button_Click_1"/>
+        <Button Grid.Row="0" Grid.Column="2" Content="Производитель" FontSize="11" Margin="0,0,0,1" Click="Button_Click_2"/>
+        <Button Grid.Row="0" Grid.Column="3" Content="Тип кузова"  Margin="0,0,0,1" Click="Button_Click_3" />
+        <Button Grid.Row="0" Grid.Column="4" Content="Марка"  Margin="0,0,0,1" Click="Button_Click_4"/>
+        <Button Grid.Row="0" Grid.Column="5" Content="Покупки"  Margin="0,0,0,1" Click="Button_Click_5"/>
+        <Button Grid.Row="0" Grid.Column="6" Content="История покупок" FontSize="10" Margin="0,0,0,1" Click="Button_Click_6"/>
+        
+        <Frame x:Name="PageFrame" Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="2" Grid.RowSpan="2"/>
+
+        <Grid Grid.Column="1" Margin="0,2,0,0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="53*"/>
+                <RowDefinition Height="336*"/>
+                <RowDefinition Height="45*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+    </Grid>
+</Window>

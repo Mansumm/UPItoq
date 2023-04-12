@@ -1,0 +1,37 @@
+﻿<Window x:Class="ItoqPraktika.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ItoqPraktika"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="195*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Content="Соотрудники"  Margin="0,0,0,1" Click="Button_Click" />
+        <Button Grid.Row="0" Grid.Column="1" Content="Роли" Margin="0,0,0,1" Click="Button_Click_1"/>
+        <Button Grid.Row="0" Grid.Column="2" Content="Данные для входа" Margin="0,0,0,1" Click="Button_Click_2"/>
+        <Button Grid.Row="0" Grid.Column="3" Content="Покупатель"  Margin="0,0,0,1" Click="Button_Click_3"  />
+        <Button Grid.Row="0" Grid.Column="4" Content="Страны"  Margin="0,0,0,1" Click="Button_Click_4"  />
+        <Frame x:Name="PageFrame" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="1"/>
+        
+        <Grid Grid.Column="1" Margin="0,2,0,0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="53*"/>
+                <RowDefinition Height="336*"/>
+                <RowDefinition Height="45*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+    </Grid>
+</Window>
